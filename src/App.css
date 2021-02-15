@@ -1,0 +1,71 @@
+input{
+  height: 60px;
+  border-radius: 30px;
+  width: 60%;
+  text-align: center;
+  font-size:  calc(10px + 2vmin);
+  outline: none;
+}
+
+input:focus{
+  border:none;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: coral;
+}
+a:visited{
+  text-decoration: none;
+}
+
+pre{
+  text-align: left;
+  font-size: 1.2vmin;
+  font-family: monospace;
+}
+h1{
+  margin-bottom: 0;
+}
+
+.row{
+  flex-direction: row;
+  display: flex;
+  margin: 0 25px;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+.row-child{
+  flex:1;
+}
+.row img{
+  width: 200px;
+}
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
