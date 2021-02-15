@@ -83,7 +83,7 @@ const App = () => {
     return(
       <section>
         <div>
-          <h3>Stations with the most passengers boarding per every hour</h3>
+          <h3>Stations with the most passengers boarding per hour</h3>
           <div className="row">
           <ReactMarkdown source=
             {
@@ -119,7 +119,7 @@ plt.show()
           
         </div>
         <div>
-        <h3>The station with the most drop-offs by time zone.</h3>
+        <h3>Stations with the most passengers exiting per hour</h3>
         <div className="row">
           <ReactMarkdown source=
             {
@@ -154,7 +154,7 @@ plt.show()
           </div>
         </div>
         <div>
-          <h3>Trend of people getting in and out by subway time zone</h3>
+          <h3>Trend of traffic per hour</h3>
           <div className="row">
           <ReactMarkdown source=
             {
@@ -256,9 +256,9 @@ plt.show()
        }
        {
          result&&
-         <p>{date.getHours()} o'clock<br/>Historical data shows that there will be {result} people.<br/>It is expected to be {result>30000?<>crowded..</>:<>vacant..</>}</p>
+         <p>{date.getHours()} o'clock<br/>Past data shows that there will be {result} people.<br/>It is expected to be {result>30000?<>crowded..</>:<>vacant..</>}</p>
        }
-       <a href="#" onClick={()=>graph?setGraph(false):setGraph(true)}><p>See Visualize Subway Crowding Data</p></a>
+       <a href="#" onClick={()=>graph?setGraph(false):setGraph(true)}><p>View Visualized Subway Traffic Data</p></a>
        {graph&&
         GrpahContents()
        }
